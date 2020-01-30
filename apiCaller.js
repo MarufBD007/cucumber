@@ -17,7 +17,7 @@ module.exports = {
         };
         return axios.post(url, data, config);
     },
-    privateGet: async(url) => {
+    privateGet: async(url, token) => {
         config['headers'] = {
             'Authorization': `Bearer ${token}`
         };
