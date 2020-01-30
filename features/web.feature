@@ -4,4 +4,4 @@ Feature: User Login for webportal
     When I fill in Email with "marufr@springrainit.com"
     And I fill in Password with "asdzxc"
     And I press Login
-    Then I should see the dashboard
+    Then I should see "https://member.dev.clubswan.com/dashboard"

@@ -17,6 +17,7 @@
     "cucumber-pretty": "^6.0.0",
     "geckodriver": "^1.19.1",
     "install": "^0.13.0",
-    "selenium-webdriver": "^3.5.0"
+    "selenium-webdriver": "^3.5.0",
+    "sleep": "^6.1.0"
   }
 }
