@@ -1,0 +1,189 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "User Login",
+    "line": 1,
+    "id": "user-login",
+    "tags": [],
+    "uri": "test/features/login.feature",
+    "elements": [
+      {
+        "id": "user-login;login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Login with valid credentials",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "information",
+                      "data_type"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "email",
+                      "marufr@springrainit.com"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "asdzxc"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "user wants to login with following attributes",
+            "match": {
+              "location": "test/steps/api.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I press Login",
+            "match": {
+              "location": "test/steps/api.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1450000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should get status 200 along with a valid token",
+            "match": {
+              "location": "test/steps/api.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "User Details",
+    "line": 1,
+    "id": "user-details",
+    "tags": [],
+    "uri": "test/features/user.feature",
+    "elements": [
+      {
+        "id": "user-details;a-user-wants-to-see-his-details",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "A User wants to see his Details",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 3,
+            "name": "I call the api with Bearer token",
+            "match": {
+              "location": "test/steps/api.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1190000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 4,
+            "name": "I can see the details of the user with status success",
+            "match": {
+              "location": "test/steps/api.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "User Login for webportal",
+    "line": 1,
+    "id": "user-login-for-webportal",
+    "tags": [],
+    "uri": "test/features/web.feature",
+    "elements": [
+      {
+        "id": "user-login-for-webportal;login-user-with-valid-credentials-in-webportal",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Login user with valid credentials in webportal",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I am on the webportal login page",
+            "match": {
+              "location": "test/steps/web.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4499000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I fill in Email and Password with \"marufr@springrainit.com\" and \"asdzxc\"",
+            "match": {
+              "location": "test/steps/web.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 429000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I should see \"https://member.dev.clubswan.com/dashboard\"",
+            "match": {
+              "location": "test/steps/web.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5813000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
