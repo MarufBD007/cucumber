@@ -3,7 +3,6 @@ const { Builder, By, Key, until } = require('selenium-webdriver');
 const assert = require('assert');
 const sleep = require("sleep");
 let driver = null;
-try{
 setDefaultTimeout(60 * 1000);
 Given('I am on the webportal login page', async function () {
     driver = new Builder().forBrowser('chrome').build();
@@ -23,7 +22,3 @@ Then('I should see {string}',  async function (input) {
 AfterAll( function() {
     return driver.quit();
 });
-
-}catch(error){
-    
-}

@@ -61,7 +61,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1365000000
+              "duration": 1124000000
             }
           },
           {
@@ -74,7 +74,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 2000000
             }
           }
         ]
@@ -107,7 +107,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1195000000
+              "duration": 907000000
             }
           },
           {
@@ -120,7 +120,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ]
@@ -149,11 +149,11 @@
             "line": 3,
             "name": "I am on the webportal login page",
             "match": {
-              "location": "test/steps/web.js:8"
+              "location": "test/steps/web.js:7"
             },
             "result": {
               "status": "passed",
-              "duration": 5491000000
+              "duration": 4453000000
             }
           },
           {
@@ -162,12 +162,11 @@
             "line": 4,
             "name": "I fill in Email and Password with \"marufr@springrainit.com\" and \"asdzxc\"",
             "match": {
-              "location": "test/steps/web.js:13"
+              "location": "test/steps/web.js:12"
             },
             "result": {
-              "status": "failed",
-              "duration": 8000000,
-              "error_message": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=79.0.3945.79)\n  (Driver info: chromedriver=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}),platform=Linux 5.3.0-28-generic x86_64)\n    at Object.checkLegacyResponse (/home/maruf/projects/cucumber/node_modules/selenium-webdriver/lib/error.js:529:15)\n    at parseHttpResponse (/home/maruf/projects/cucumber/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /home/maruf/projects/cucumber/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:94:5)\nFrom: Task: WebDriver.findElement(By(css selector, *[name=\"emailAddress\"]))\n    at thenableWebDriverProxy.schedule (/home/maruf/projects/cucumber/node_modules/selenium-webdriver/lib/webdriver.js:807:17)\n    at thenableWebDriverProxy.findElement (/home/maruf/projects/cucumber/node_modules/selenium-webdriver/lib/webdriver.js:1014:17)\n    at World.<anonymous> (/home/maruf/projects/cucumber/test/steps/web.js:14:18)\nFrom: Task: WebElement.sendKeys()\n    at thenableWebDriverProxy.schedule (/home/maruf/projects/cucumber/node_modules/selenium-webdriver/lib/webdriver.js:807:17)\n    at WebElementPromise.schedule_ (/home/maruf/projects/cucumber/node_modules/selenium-webdriver/lib/webdriver.js:2015:25)\n    at WebElementPromise.sendKeys (/home/maruf/projects/cucumber/node_modules/selenium-webdriver/lib/webdriver.js:2178:19)\n    at World.<anonymous> (/home/maruf/projects/cucumber/test/steps/web.js:14:55)"
+              "status": "passed",
+              "duration": 461000000
             }
           },
           {
@@ -176,10 +175,11 @@
             "line": 5,
             "name": "I should see \"https://member.dev.clubswan.com/dashboard\"",
             "match": {
-              "location": "test/steps/web.js:18"
+              "location": "test/steps/web.js:17"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5502000000
             }
           }
         ]

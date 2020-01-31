@@ -48,7 +48,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -61,7 +61,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1238000000
+              "duration": 1124000000
             }
           },
           {
@@ -107,7 +107,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 879000000
+              "duration": 907000000
             }
           },
           {
@@ -149,11 +149,11 @@
             "line": 3,
             "name": "I am on the webportal login page",
             "match": {
-              "location": "test/steps/web.js:8"
+              "location": "test/steps/web.js:7"
             },
             "result": {
               "status": "passed",
-              "duration": 7507000000
+              "duration": 4453000000
             }
           },
           {
@@ -162,11 +162,11 @@
             "line": 4,
             "name": "I fill in Email and Password with \"marufr@springrainit.com\" and \"asdzxc\"",
             "match": {
-              "location": "test/steps/web.js:13"
+              "location": "test/steps/web.js:12"
             },
             "result": {
               "status": "passed",
-              "duration": 507000000
+              "duration": 461000000
             }
           },
           {
@@ -175,11 +175,11 @@
             "line": 5,
             "name": "I should see \"https://member.dev.clubswan.com/dashboard\"",
             "match": {
-              "location": "test/steps/web.js:18"
+              "location": "test/steps/web.js:17"
             },
             "result": {
               "status": "passed",
-              "duration": 5497000000
+              "duration": 5502000000
             }
           }
         ]
