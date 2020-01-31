@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run test",
     "test": "npm run cucumber; npm run report",
-    "cucumber": "cucumber-js ./test/features -r ./test/steps --format json | tee report.json",
+    "cucumber": "cucumber-js ./test/features -r ./test/steps",
     "report": "node index.js"
   },
   "author": "",
