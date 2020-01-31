@@ -1,4 +1,4 @@
-Feature: User Login
+Feature: User Login Via API
     Scenario: Login with valid credentials
         Given user wants to login with following attributes
          | information       | data_type                  |
