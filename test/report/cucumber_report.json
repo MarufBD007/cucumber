@@ -34,7 +34,7 @@
                   {
                     "cells": [
                       "password",
-                      "asdzxc"
+                      "asdzxc1"
                     ]
                   }
                 ]
@@ -61,7 +61,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1340000000
+              "duration": 1301000000
             }
           },
           {
@@ -73,8 +73,9 @@
               "location": "test/steps/api.js:33"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "failed",
+              "duration": 28000000,
+              "error_message": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(responseData.status === input)\n\n    + expected - actual\n\n    -false\n    +true\n\n    at World.<anonymous> (/home/maruf/projects/cucumber/test/steps/api.js:34:5)"
             }
           }
         ]
@@ -106,8 +107,9 @@
               "location": "test/steps/api.js:21"
             },
             "result": {
-              "status": "passed",
-              "duration": 1205000000
+              "status": "failed",
+              "duration": 0,
+              "error_message": "TypeError: Cannot read property 'token' of null\n    at World.<anonymous> (/home/maruf/projects/cucumber/test/steps/api.js:22:81)"
             }
           },
           {
@@ -119,8 +121,7 @@
               "location": "test/steps/api.js:29"
             },
             "result": {
-              "status": "passed",
-              "duration": 0
+              "status": "skipped"
             }
           }
         ]
@@ -149,11 +150,11 @@
             "line": 3,
             "name": "I am on the webportal login page",
             "match": {
-              "location": "test/steps/web.js:7"
+              "location": "test/steps/web.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 4703000000
+              "duration": 5351000000
             }
           },
           {
@@ -162,11 +163,11 @@
             "line": 4,
             "name": "I fill in Email and Password with \"marufr@springrainit.com\" and \"asdzxc\"",
             "match": {
-              "location": "test/steps/web.js:12"
+              "location": "test/steps/web.js:13"
             },
             "result": {
               "status": "passed",
-              "duration": 442000000
+              "duration": 433000000
             }
           },
           {
@@ -175,11 +176,11 @@
             "line": 5,
             "name": "I should see \"https://member.dev.clubswan.com/dashboard\"",
             "match": {
-              "location": "test/steps/web.js:17"
+              "location": "test/steps/web.js:18"
             },
             "result": {
               "status": "passed",
-              "duration": 5555000000
+              "duration": 5768000000
             }
           }
         ]

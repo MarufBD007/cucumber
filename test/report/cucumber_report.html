@@ -279,8 +279,8 @@ pre {
           <a class="navbar-brand">Cucumberjs Report</a>
           <div class="project-name visible-md visible-lg">testing</div>
           <div class="label-container">
-            <span class="label label-success" onclick="toggle('.feature-passed')" title=scenarios>Passed: 3</span>
-            <span class="label label-danger" onclick="toggle('.feature-failed')" title=scenarios>Failed: 0</span>
+            <span class="label label-success" onclick="toggle('.feature-passed')" title=scenarios>Passed: 1</span>
+            <span class="label label-danger" onclick="toggle('.feature-failed')" title=scenarios>Failed: 2</span>
           </div>
         </div>
       </div>
@@ -288,7 +288,7 @@ pre {
 
     <div class="container">
 
-      <div class="generated-on">Fri Jan 31 2020 11:01:58 GMT+0600 (Bangladesh Standard Time)</div>
+      <div class="generated-on">Fri Jan 31 2020 12:37:53 GMT+0600 (Bangladesh Standard Time)</div>
 
       <div class="row">
         <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
@@ -371,7 +371,7 @@ pre {
 <div class="row" xmlns="http://www.w3.org/1999/html">
 
 
-<div class="feature-passed">
+<div class="feature-failed">
 
     <div class="col-lg-6 col-md-6">
         <div class="panel panel-default">
@@ -381,14 +381,14 @@ pre {
                     <div class="tags">
                     </div>
                     
-                    <a data-toggle="collapse" href="#collapseFeaturetesting1df2f85e-97fe-430c-9c8e-8562aafa8173">
+                    <a data-toggle="collapse" href="#collapseFeaturetesting9e6d7e15-54fc-4380-bed2-b7c42f59a4ee">
                         <i class="glyphicon glyphicon-chevron-right"></i>
                         <i class="glyphicon glyphicon-chevron-down"></i>
                         <b>Feature:</b>User Login Via API
                         <span class="label-container">
-              <span class="label label-success"
-                                                         title="1 Scenarios Passed">1</span>
               
+              <span class="label label-danger"
+                                                         title="1 Scenarios Failed">1</span>
               
               
               
@@ -397,7 +397,7 @@ pre {
                     </a>
                 </h4>
             </div>
-            <div id="collapseFeaturetesting1df2f85e-97fe-430c-9c8e-8562aafa8173" class="panel-collapse collapse">
+            <div id="collapseFeaturetesting9e6d7e15-54fc-4380-bed2-b7c42f59a4ee" class="panel-collapse collapse">
                 <div class="panel-body">
                     
                     
@@ -410,10 +410,10 @@ pre {
                                 <div class="tags">
                                 </div>
                                 
-                                <a data-toggle="collapse" href="#collapseScenariotesting2eee67be-06c9-406f-a51a-53e3ff53468b">
+                                <a data-toggle="collapse" href="#collapseScenariotestinga48ce2f9-7e93-4812-a985-f095cce996c9">
                                     <div>
 
-                                        <div style="padding-right: 30px">
+                                        <div style="padding-right: 50px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
                                             <b>Scenario:</b>Login with valid credentials
@@ -421,11 +421,12 @@ pre {
                                         <div>
                             <span class="label-container">
                               <span class="label label-success"
-                                                               title="3 Steps Passed">3</span>
+                                                               title="2 Steps Passed">2</span>
                               
                               
                               
-                              
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
                               
                             </span>
                                         </div>
@@ -434,7 +435,7 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenariotesting2eee67be-06c9-406f-a51a-53e3ff53468b"
+                        <div id="collapseScenariotestinga48ce2f9-7e93-4812-a985-f095cce996c9"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div></div>
@@ -498,7 +499,7 @@ pre {
                                         </td>
                                       
                                         <td>
-                                          asdzxc
+                                          asdzxc1
                                         </td>
                                       
                                       </tr>
@@ -542,7 +543,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               1s 340ms
+                               1s 301ms
                               </span>
                             
                          
@@ -570,8 +571,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
                                     
                                     
                                     <span class="text">
@@ -580,7 +581,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               1ms
+                               28ms
                               </span>
                             
                          
@@ -591,6 +592,64 @@ pre {
                       </span>
                                 
                                 
+
+                                    
+                                    <a href="#error0_02"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_02"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_02">
+                                            <br> AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert(responseData.status === input)
+
+    + expected - actual
+
+    -false
+    +true
+
+    at World.(anonymous) (/home/maruf/projects/cucumber/test/steps/api.js:34:5)</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_02" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert(responseData.status === input)
+
+    + expected - actual
+
+    -false
+    +true
+
+    at World.(anonymous) (/home/maruf/projects/cucumber/test/steps/api.js:34:5)</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
 
                                     
 
@@ -617,7 +676,7 @@ pre {
 
 
 
-<div class="feature-passed">
+<div class="feature-failed">
 
     <div class="col-lg-6 col-md-6">
         <div class="panel panel-default">
@@ -627,14 +686,14 @@ pre {
                     <div class="tags">
                     </div>
                     
-                    <a data-toggle="collapse" href="#collapseFeaturetesting2a38ee42-e660-4699-90dc-2aed8be4f024">
+                    <a data-toggle="collapse" href="#collapseFeaturetestingddc55e76-39fb-4139-a964-fa5c10de5dbb">
                         <i class="glyphicon glyphicon-chevron-right"></i>
                         <i class="glyphicon glyphicon-chevron-down"></i>
                         <b>Feature:</b>User Details Via API
                         <span class="label-container">
-              <span class="label label-success"
-                                                         title="1 Scenarios Passed">1</span>
               
+              <span class="label label-danger"
+                                                         title="1 Scenarios Failed">1</span>
               
               
               
@@ -643,7 +702,7 @@ pre {
                     </a>
                 </h4>
             </div>
-            <div id="collapseFeaturetesting2a38ee42-e660-4699-90dc-2aed8be4f024" class="panel-collapse collapse">
+            <div id="collapseFeaturetestingddc55e76-39fb-4139-a964-fa5c10de5dbb" class="panel-collapse collapse">
                 <div class="panel-body">
                     
                     
@@ -656,22 +715,23 @@ pre {
                                 <div class="tags">
                                 </div>
                                 
-                                <a data-toggle="collapse" href="#collapseScenariotestingf91b4513-da9d-481a-8439-19e5e41819bd">
+                                <a data-toggle="collapse" href="#collapseScenariotestingb493711c-3e1d-45ab-9bbd-37eb4343fbec">
                                     <div>
 
-                                        <div style="padding-right: 30px">
+                                        <div style="padding-right: 50px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
                                             <b>Scenario:</b>A User wants to see his Details
                                         </div>
                                         <div>
                             <span class="label-container">
-                              <span class="label label-success"
-                                                               title="2 Steps Passed">2</span>
                               
                               
                               
-                              
+                              <span class="label label-warning"
+                                                                title="1 Steps Skipped">1</span>
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
                               
                             </span>
                                         </div>
@@ -680,7 +740,7 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenariotestingf91b4513-da9d-481a-8439-19e5e41819bd"
+                        <div id="collapseScenariotestingb493711c-3e1d-45ab-9bbd-37eb4343fbec"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div></div>
@@ -691,8 +751,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
                                     
                                     
                                     <span class="text">
@@ -701,7 +761,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               1s 205ms
+                               < 1ms
                               </span>
                             
                          
@@ -712,6 +772,48 @@ pre {
                       </span>
                                 
                                 
+
+                                    
+                                    <a href="#error1_00"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error1_00"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-1_00">
+                                            <br> TypeError: Cannot read property 'token' of null
+    at World.(anonymous) (/home/maruf/projects/cucumber/test/steps/api.js:22:81)</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-1_00" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>TypeError: Cannot read property 'token' of null
+    at World.(anonymous) (/home/maruf/projects/cucumber/test/steps/api.js:22:81)</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
 
                                     
 
@@ -729,8 +831,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
                                     
                                     
                                     <span class="text">
@@ -739,7 +841,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               < 1ms
+                               0s
                               </span>
                             
                          
@@ -790,7 +892,7 @@ pre {
                     <div class="tags">
                     </div>
                     
-                    <a data-toggle="collapse" href="#collapseFeaturetestingc73113a4-5dc3-475a-b156-377ac9ddeea7">
+                    <a data-toggle="collapse" href="#collapseFeaturetestingc9859e38-a4c2-42e4-a6ae-9076dbf56610">
                         <i class="glyphicon glyphicon-chevron-right"></i>
                         <i class="glyphicon glyphicon-chevron-down"></i>
                         <b>Feature:</b>User Login Via Webportal
@@ -806,7 +908,7 @@ pre {
                     </a>
                 </h4>
             </div>
-            <div id="collapseFeaturetestingc73113a4-5dc3-475a-b156-377ac9ddeea7" class="panel-collapse collapse">
+            <div id="collapseFeaturetestingc9859e38-a4c2-42e4-a6ae-9076dbf56610" class="panel-collapse collapse">
                 <div class="panel-body">
                     
                     
@@ -819,7 +921,7 @@ pre {
                                 <div class="tags">
                                 </div>
                                 
-                                <a data-toggle="collapse" href="#collapseScenariotestinga40e3b0e-e314-44f9-8c32-541487b91099">
+                                <a data-toggle="collapse" href="#collapseScenariotesting0e279b6c-6d32-452d-bc87-61f444f15deb">
                                     <div>
 
                                         <div style="padding-right: 30px">
@@ -843,7 +945,7 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenariotestinga40e3b0e-e314-44f9-8c32-541487b91099"
+                        <div id="collapseScenariotesting0e279b6c-6d32-452d-bc87-61f444f15deb"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div></div>
@@ -864,7 +966,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               4s 703ms
+                               5s 351ms
                               </span>
                             
                          
@@ -902,7 +1004,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               442ms
+                               433ms
                               </span>
                             
                          
@@ -940,7 +1042,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               5s 555ms
+                               5s 768ms
                               </span>
                             
                          
@@ -1000,8 +1102,8 @@ pre {
         google.load("visualization", "1", {packages: ["corechart"]});
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Features",
-                                                            "failed" : 0,
-                                                            "passed" : 3,
+                                                            "failed" : 2,
+                                                            "passed" : 1,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
                                                             "skipped" : 0,
@@ -1010,8 +1112,8 @@ pre {
                                             });
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Scenarios",
-                                                            "failed" : 0,
-                                                            "passed" : 3,
+                                                            "failed" : 2,
+                                                            "passed" : 1,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
                                                             "skipped" : 0,

@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js ./test/features -r ./test/steps -f json:test/report/cucumber_report.json && node index.js"
+    "start": "npm run test",
+    "test": "npm run cucumber; npm run report",
+    "cucumber": "cucumber-js ./test/features -r ./test/steps -f json:test/report/cucumber_report.json",
+    "report": "node index.js"
   },
   "author": "",
   "license": "ISC",
