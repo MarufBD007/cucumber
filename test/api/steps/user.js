@@ -1,10 +1,12 @@
 const { Then, When } = require('cucumber');
+const { baseUrl } = require("../../../config");
 const assert = require('assert');
 const { privateGet } = require("../../apiCaller");
 let userDetails = {};
 
+
 When('I call the api with Bearer token', function () {
-    return privateGet('https://api.dev.auws.cloud/user', this.token).then(response => {
+    return privateGet(`${baseUrl}/user`, this.token).then(response => {
         userDetails = response;
     }).catch(error=>{
         userDetails = error.response;

@@ -1,21 +1,22 @@
 const { Given, Then, When, setWorldConstructor, BeforeAll } = require('cucumber');
 const assert = require('assert');
 const { publicPost} = require("../../apiCaller");
+const { baseUrl } = require("../../../config");
 let request = {};
 let responseData = {};
+
 Given('user wants to login with following attributes',  async function(data){
     request.email = data.raw()[1][1];
     request.password = data.raw()[2][1];
 });
 
 When('I press Login', () => {
-    return publicPost('https://api.dev.auws.cloud/auth/login',request).then(response => {
+    return publicPost(`${baseUrl}/auth/login`,request).then(response => {
         responseData = response;
-    }).catch(error=>{
+    }).catch(error => {
         responseData = error.response;
     }); 
 });
-
 
 Then('I should get status {int} along with a valid token', function (input) {
     assert(responseData.status === input);

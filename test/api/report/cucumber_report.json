@@ -21,11 +21,11 @@
             "line": 3,
             "name": "I call the api with Bearer token for fetching account list",
             "match": {
-              "location": "test/api/steps/account.js:6"
+              "location": "test/api/steps/account.js:7"
             },
             "result": {
               "status": "passed",
-              "duration": 1253000000
+              "duration": 902000000
             }
           },
           {
@@ -34,11 +34,11 @@
             "line": 4,
             "name": "I can see the list of accounts",
             "match": {
-              "location": "test/api/steps/account.js:14"
+              "location": "test/api/steps/account.js:15"
             },
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 0
             }
           }
         ]
@@ -90,11 +90,11 @@
             "line": 3,
             "name": "user wants to login with following attributes",
             "match": {
-              "location": "test/api/steps/login.js:6"
+              "location": "test/api/steps/login.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -103,11 +103,11 @@
             "line": 7,
             "name": "I press Login",
             "match": {
-              "location": "test/api/steps/login.js:11"
+              "location": "test/api/steps/login.js:13"
             },
             "result": {
               "status": "passed",
-              "duration": 853000000
+              "duration": 727000000
             }
           },
           {
@@ -116,11 +116,11 @@
             "line": 8,
             "name": "I should get status 200 along with a valid token",
             "match": {
-              "location": "test/api/steps/login.js:20"
+              "location": "test/api/steps/login.js:21"
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 0
             }
           }
         ]
@@ -149,11 +149,11 @@
             "line": 3,
             "name": "I call the api with Bearer token",
             "match": {
-              "location": "test/api/steps/user.js:6"
+              "location": "test/api/steps/user.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 914000000
+              "duration": 802000000
             }
           },
           {
@@ -162,7 +162,7 @@
             "line": 4,
             "name": "I can see the details of the user with status success",
             "match": {
-              "location": "test/api/steps/user.js:14"
+              "location": "test/api/steps/user.js:16"
             },
             "result": {
               "status": "passed",
