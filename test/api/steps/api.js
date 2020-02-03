@@ -1,6 +1,6 @@
 const { Given, Then, When } = require('cucumber');
 const assert = require('assert');
-const { privateGet, publicPost} = require("../apiCaller");
+const { privateGet, publicPost} = require("../../apiCaller");
 let request = {};
 let responseData = {};
 let userDetails = {};

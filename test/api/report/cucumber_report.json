@@ -5,7 +5,7 @@
     "line": 1,
     "id": "user-login-via-api",
     "tags": [],
-    "uri": "test/features/login.feature",
+    "uri": "test/api/features/login.feature",
     "elements": [
       {
         "id": "user-login-via-api;login-with-valid-credentials",
@@ -44,7 +44,7 @@
             "line": 3,
             "name": "user wants to login with following attributes",
             "match": {
-              "location": "test/steps/api.js:8"
+              "location": "test/api/steps/api.js:8"
             },
             "result": {
               "status": "passed",
@@ -57,11 +57,11 @@
             "line": 7,
             "name": "I press Login",
             "match": {
-              "location": "test/steps/api.js:13"
+              "location": "test/api/steps/api.js:13"
             },
             "result": {
               "status": "passed",
-              "duration": 1124000000
+              "duration": 1170000000
             }
           },
           {
@@ -70,11 +70,11 @@
             "line": 8,
             "name": "I should get status 200 along with a valid token",
             "match": {
-              "location": "test/steps/api.js:33"
+              "location": "test/api/steps/api.js:33"
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 1000000
             }
           }
         ]
@@ -87,7 +87,7 @@
     "line": 1,
     "id": "user-details-via-api",
     "tags": [],
-    "uri": "test/features/user.feature",
+    "uri": "test/api/features/user.feature",
     "elements": [
       {
         "id": "user-details-via-api;a-user-wants-to-see-his-details",
@@ -103,11 +103,11 @@
             "line": 3,
             "name": "I call the api with Bearer token",
             "match": {
-              "location": "test/steps/api.js:21"
+              "location": "test/api/steps/api.js:21"
             },
             "result": {
               "status": "passed",
-              "duration": 907000000
+              "duration": 860000000
             }
           },
           {
@@ -116,70 +116,11 @@
             "line": 4,
             "name": "I can see the details of the user with status success",
             "match": {
-              "location": "test/steps/api.js:29"
+              "location": "test/api/steps/api.js:29"
             },
             "result": {
               "status": "passed",
               "duration": 0
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "keyword": "Feature",
-    "name": "User Login Via Webportal",
-    "line": 1,
-    "id": "user-login-via-webportal",
-    "tags": [],
-    "uri": "test/features/web.feature",
-    "elements": [
-      {
-        "id": "user-login-via-webportal;login-user-with-valid-credentials-in-webportal",
-        "keyword": "Scenario",
-        "line": 2,
-        "name": "Login user with valid credentials in webportal",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 3,
-            "name": "I am on the webportal login page",
-            "match": {
-              "location": "test/steps/web.js:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4453000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 4,
-            "name": "I fill in Email and Password with \"marufr@springrainit.com\" and \"asdzxc\"",
-            "match": {
-              "location": "test/steps/web.js:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 461000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 5,
-            "name": "I should see \"https://member.dev.clubswan.com/dashboard\"",
-            "match": {
-              "location": "test/steps/web.js:17"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5502000000
             }
           }
         ]

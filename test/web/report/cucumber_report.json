@@ -1,0 +1,79 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "User Login Via Webportal",
+    "line": 1,
+    "id": "user-login-via-webportal",
+    "tags": [],
+    "uri": "test/web/features/web.feature",
+    "elements": [
+      {
+        "id": "user-login-via-webportal;login-user-with-valid-credentials-in-webportal",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Login user with valid credentials in webportal",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I am on the webportal login page",
+            "match": {
+              "location": "test/web/steps/web.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4685000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I fill in Email and Password with \"marufr1@springrainit.com\" and \"asdzxc\"",
+            "match": {
+              "location": "test/web/steps/web.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 495000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "information",
+                      "data_type"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "url",
+                      "https://member.dev.clubswan.com/dashboard"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I should see dashboard page",
+            "match": {
+              "location": "test/web/steps/web.js:21"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5036000000,
+              "error_message": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(url === data.raw()[1][1])\n\n    + expected - actual\n\n    -false\n    +true\n\n    at World.<anonymous> (/home/maruf/projects/cucumber/test/web/steps/web.js:24:5)\n    at processTicksAndRejections (internal/process/task_queues.js:94:5)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

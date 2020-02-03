@@ -5,7 +5,7 @@ const sleep = require("sleep");
 let driver = null;
 setDefaultTimeout(60 * 1000);
 Given('I am on the webportal login page', async function () {
-    driver = new Builder().forBrowser('chrome').build();
+    driver = await new Builder().forBrowser('chrome').build();
     await driver.manage().window().setSize(1700, 900);
     return await driver.get('https://member.dev.clubswan.com/');
 });
@@ -14,15 +14,11 @@ When('I fill in Email and Password with {string} and {string}', async(input, inp
     return await driver.findElement(By.name('password')).sendKeys(input2, Key.RETURN);
 });
 
-Then('I should see dashboard page', function(){
-
-});
-
-// Then('I should see {string}',  async function (input) {
-//     sleep.sleep(5);
-//     const url = await driver.getCurrentUrl();
-//     assert(input === url.toString());
-//  });
-AfterAll( function() {
-    return driver.quit();
+Then('I should see dashboard page',  async function (data) {
+    sleep.sleep(5);
+    const url = await driver.getCurrentUrl();
+    assert(url === data.raw()[1][1]);
+ });
+AfterAll( async function() {
+    return await driver.quit();
 });
