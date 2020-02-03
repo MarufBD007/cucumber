@@ -25,20 +25,43 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5847000000
+              "duration": 5143000000
             }
           },
           {
-            "arguments": [],
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "information",
+                      "data_type"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "email",
+                      "marufr@springrainit.com"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "asdzxc"
+                    ]
+                  }
+                ]
+              }
+            ],
             "keyword": "When ",
             "line": 4,
-            "name": "I fill in Email and Password with \"marufr1@springrainit.com\" and \"asdzxc\"",
+            "name": "I fill in Email and Password with the following and then press Login",
             "match": {
               "location": "test/web/steps/web.js:12"
             },
             "result": {
               "status": "passed",
-              "duration": 465000000
+              "duration": 412000000
             }
           },
           {
@@ -61,15 +84,14 @@
               }
             ],
             "keyword": "Then ",
-            "line": 5,
+            "line": 8,
             "name": "I should see dashboard page",
             "match": {
               "location": "test/web/steps/web.js:17"
             },
             "result": {
-              "status": "failed",
-              "duration": 5031000000,
-              "error_message": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(url === data.raw()[1][1])\n\n    + expected - actual\n\n    -false\n    +true\n\n    at World.<anonymous> (/home/maruf/projects/cucumber/test/web/steps/web.js:20:5)\n    at processTicksAndRejections (internal/process/task_queues.js:94:5)"
+              "status": "passed",
+              "duration": 6230000000
             }
           }
         ]

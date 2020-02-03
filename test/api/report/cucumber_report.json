@@ -1,14 +1,60 @@
 [
   {
     "keyword": "Feature",
-    "name": "User Login Via API",
+    "name": "Accounts",
     "line": 1,
-    "id": "user-login-via-api",
+    "id": "accounts",
+    "tags": [],
+    "uri": "test/api/features/account.feature",
+    "elements": [
+      {
+        "id": "accounts;i-want-to-see-the-account-list",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "I want to see the account list",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 3,
+            "name": "I call the api with Bearer token for fetching account list",
+            "match": {
+              "location": "test/api/steps/account.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1253000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 4,
+            "name": "I can see the list of accounts",
+            "match": {
+              "location": "test/api/steps/account.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "Login",
+    "line": 1,
+    "id": "login",
     "tags": [],
     "uri": "test/api/features/login.feature",
     "elements": [
       {
-        "id": "user-login-via-api;login-with-valid-credentials",
+        "id": "login;login-with-valid-credentials",
         "keyword": "Scenario",
         "line": 2,
         "name": "Login with valid credentials",
@@ -44,7 +90,7 @@
             "line": 3,
             "name": "user wants to login with following attributes",
             "match": {
-              "location": "test/api/steps/api.js:8"
+              "location": "test/api/steps/login.js:6"
             },
             "result": {
               "status": "passed",
@@ -57,11 +103,11 @@
             "line": 7,
             "name": "I press Login",
             "match": {
-              "location": "test/api/steps/api.js:13"
+              "location": "test/api/steps/login.js:11"
             },
             "result": {
               "status": "passed",
-              "duration": 1088000000
+              "duration": 853000000
             }
           },
           {
@@ -70,11 +116,11 @@
             "line": 8,
             "name": "I should get status 200 along with a valid token",
             "match": {
-              "location": "test/api/steps/api.js:33"
+              "location": "test/api/steps/login.js:20"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 2000000
             }
           }
         ]
@@ -83,14 +129,14 @@
   },
   {
     "keyword": "Feature",
-    "name": "User Details Via API",
+    "name": "User",
     "line": 1,
-    "id": "user-details-via-api",
+    "id": "user",
     "tags": [],
     "uri": "test/api/features/user.feature",
     "elements": [
       {
-        "id": "user-details-via-api;a-user-wants-to-see-his-details",
+        "id": "user;a-user-wants-to-see-his-details",
         "keyword": "Scenario",
         "line": 2,
         "name": "A User wants to see his Details",
@@ -103,11 +149,11 @@
             "line": 3,
             "name": "I call the api with Bearer token",
             "match": {
-              "location": "test/api/steps/api.js:21"
+              "location": "test/api/steps/user.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 997000000
+              "duration": 914000000
             }
           },
           {
@@ -116,7 +162,7 @@
             "line": 4,
             "name": "I can see the details of the user with status success",
             "match": {
-              "location": "test/api/steps/api.js:29"
+              "location": "test/api/steps/user.js:14"
             },
             "result": {
               "status": "passed",

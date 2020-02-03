@@ -9,9 +9,9 @@ Given('I am on the webportal login page', async function () {
     await driver.manage().window().setSize(1700, 900);
     return await driver.get('https://member.dev.clubswan.com/');
 });
-When('I fill in Email and Password with {string} and {string}', async(input, input2) => {
-    await driver.findElement(By.name('emailAddress')).sendKeys(input, Key.TAB);
-    return await driver.findElement(By.name('password')).sendKeys(input2, Key.RETURN);
+When('I fill in Email and Password with the following and then press Login', async(dataTable) => {
+    await driver.findElement(By.name('emailAddress')).sendKeys(dataTable.raw()[1][1], Key.TAB);
+    return await driver.findElement(By.name('password')).sendKeys(dataTable.raw()[2][1], Key.RETURN);
 });
 
 Then('I should see dashboard page',  async function (data) {

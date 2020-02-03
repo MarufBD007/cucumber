@@ -279,8 +279,8 @@ pre {
           <a class="navbar-brand">Cucumberjs Report</a>
           <div class="project-name visible-md visible-lg">testing</div>
           <div class="label-container">
-            <span class="label label-success" onclick="toggle('.feature-passed')" title=scenarios>Passed: 0</span>
-            <span class="label label-danger" onclick="toggle('.feature-failed')" title=scenarios>Failed: 1</span>
+            <span class="label label-success" onclick="toggle('.feature-passed')" title=scenarios>Passed: 1</span>
+            <span class="label label-danger" onclick="toggle('.feature-failed')" title=scenarios>Failed: 0</span>
           </div>
         </div>
       </div>
@@ -288,7 +288,7 @@ pre {
 
     <div class="container">
 
-      <div class="generated-on">Mon Feb 03 2020 10:27:01 GMT+0600 (Bangladesh Standard Time)</div>
+      <div class="generated-on">Mon Feb 03 2020 15:06:33 GMT+0600 (Bangladesh Standard Time)</div>
 
       <div class="row">
         <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
@@ -371,7 +371,7 @@ pre {
 <div class="row" xmlns="http://www.w3.org/1999/html">
 
 
-<div class="feature-failed">
+<div class="feature-passed">
 
     <div class="col-lg-6 col-md-6">
         <div class="panel panel-default">
@@ -381,14 +381,14 @@ pre {
                     <div class="tags">
                     </div>
                     
-                    <a data-toggle="collapse" href="#collapseFeaturetestingcf79fb31-d0e3-4fcf-a341-d27b5496989c">
+                    <a data-toggle="collapse" href="#collapseFeaturetesting21f1c4c4-26fc-4a54-9573-ac9959ca786a">
                         <i class="glyphicon glyphicon-chevron-right"></i>
                         <i class="glyphicon glyphicon-chevron-down"></i>
                         <b>Feature:</b>User Login Via Webportal
                         <span class="label-container">
+              <span class="label label-success"
+                                                         title="1 Scenarios Passed">1</span>
               
-              <span class="label label-danger"
-                                                         title="1 Scenarios Failed">1</span>
               
               
               
@@ -397,7 +397,7 @@ pre {
                     </a>
                 </h4>
             </div>
-            <div id="collapseFeaturetestingcf79fb31-d0e3-4fcf-a341-d27b5496989c" class="panel-collapse collapse">
+            <div id="collapseFeaturetesting21f1c4c4-26fc-4a54-9573-ac9959ca786a" class="panel-collapse collapse">
                 <div class="panel-body">
                     
                     
@@ -410,10 +410,10 @@ pre {
                                 <div class="tags">
                                 </div>
                                 
-                                <a data-toggle="collapse" href="#collapseScenariotesting7d1935fb-f0fd-422c-95ec-eb101a1bb53b">
+                                <a data-toggle="collapse" href="#collapseScenariotestingaa6be9c5-db1f-49c3-b535-fcf66e6c5226">
                                     <div>
 
-                                        <div style="padding-right: 50px">
+                                        <div style="padding-right: 30px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
                                             <b>Scenario:</b>Login user with valid credentials in webportal
@@ -421,12 +421,11 @@ pre {
                                         <div>
                             <span class="label-container">
                               <span class="label label-success"
-                                                               title="2 Steps Passed">2</span>
+                                                               title="3 Steps Passed">3</span>
                               
                               
                               
-                              <span class="label label-danger"
-                                                               title="1 Steps Failed">1</span>
+                              
                               
                             </span>
                                         </div>
@@ -435,7 +434,7 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenariotesting7d1935fb-f0fd-422c-95ec-eb101a1bb53b"
+                        <div id="collapseScenariotestingaa6be9c5-db1f-49c3-b535-fcf66e6c5226"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div></div>
@@ -456,7 +455,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               5s 847ms
+                               5s 143ms
                               </span>
                             
                          
@@ -490,14 +489,63 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">When </span>
-                          <span> I fill in Email and Password with &quot;marufr1@springrainit.com&quot; and &quot;asdzxc&quot;</span>
+                          <span> I fill in Email and Password with the following and then press Login</span>
                             
                           
                               <span class="step-duration">
-                               465ms
+                               412ms
                               </span>
                             
                          
+                            
+                               
+                                <div class="scrollBar">
+                                    <table class="arguments">
+                                    
+                                      <tr>
+                                      
+                                      
+                                        <th>
+                                          information
+                                        </th>
+                                         
+                                        <th>
+                                          data_type
+                                        </th>
+                                         
+                                        </tr>
+                                    
+                                      <tr>
+                                      
+                                      
+                                        <td>
+                                          email
+                                        </td>
+                                      
+                                        <td>
+                                          marufr@springrainit.com
+                                        </td>
+                                      
+                                      </tr>
+                                    
+                                      <tr>
+                                      
+                                      
+                                        <td>
+                                          password
+                                        </td>
+                                      
+                                        <td>
+                                          asdzxc
+                                        </td>
+                                      
+                                      </tr>
+                                    
+                              </table>
+                               </div>
+                                        
+                               
+
                             
                           
                           <!-- Adding data table data-->
@@ -522,8 +570,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-danger" title="Failed"><i
-                                            class="glyphicon glyphicon-remove"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
@@ -532,7 +580,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               5s 31ms
+                               6s 230ms
                               </span>
                             
                          
@@ -579,66 +627,6 @@ pre {
                       </span>
                                 
                                 
-
-                                    
-                                    <a href="#error0_02"
-                                       data-toggle="collapse" class="toggle">Show Error +</a>
-                                    <div id="error0_02"
-                                         class="collapse">
-                                        <pre class="info show-modal"
-                                             data-toggle="modal"
-                                             style="cursor: pointer"
-                                             data-target="#error-modal-0_02">
-                                            <br> AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
-
-  assert(url === data.raw()[1][1])
-
-    + expected - actual
-
-    -false
-    +true
-
-    at World.(anonymous) (/home/maruf/projects/cucumber/test/web/steps/web.js:20:5)
-    at processTicksAndRejections (internal/process/task_queues.js:94:5)</pre>
-                                    </div>
-
-                                <div class="modal fade" id="error-modal-0_02" tabindex="-1" role="dialog"
-                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                                </button>
-                                                <h4 class="modal-title" id="error-modal-title">
-                                                    Error
-                                                </h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h5>
-                                                    <pre><br>AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
-
-  assert(url === data.raw()[1][1])
-
-    + expected - actual
-
-    -false
-    +true
-
-    at World.(anonymous) (/home/maruf/projects/cucumber/test/web/steps/web.js:20:5)
-    at processTicksAndRejections (internal/process/task_queues.js:94:5)</pre>
-                                                </h5>
-                                            </div>
-
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                                    Close
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
 
                                     
 
@@ -688,8 +676,8 @@ pre {
         google.load("visualization", "1", {packages: ["corechart"]});
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Features",
-                                                            "failed" : 1,
-                                                            "passed" : 0,
+                                                            "failed" : 0,
+                                                            "passed" : 1,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
                                                             "skipped" : 0,
@@ -698,8 +686,8 @@ pre {
                                             });
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Scenarios",
-                                                            "failed" : 1,
-                                                            "passed" : 0,
+                                                            "failed" : 0,
+                                                            "passed" : 1,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
                                                             "skipped" : 0,
