@@ -1,3 +1,4 @@
+@PositiveTesting
 Feature: User
     Scenario: A User wants to see his Details
         When I call the api with Bearer token

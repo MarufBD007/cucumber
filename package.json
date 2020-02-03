@@ -7,7 +7,7 @@
     "start": "npm run test:api; npm run test:web;",
     "test:api": "npm run cucumber:api; npm run report:api;",
     "test:web": "npm run cucumber:web; npm run report:web;",
-    "cucumber:api": "cucumber-js ./test/api/features -r ./test/api/steps -f json:test/api/report/cucumber_report.json",
+    "cucumber:api": "cucumber-js --tags @PositiveTesting ./test/api/features -r ./test/api/steps -f json:test/api/report/cucumber_report.json",
     "cucumber:web": "cucumber-js ./test/web/features -r ./test/web/steps -f json:test/web/report/cucumber_report.json",
     "report:api": "node test/api/index.js",
     "report:web": "node test/web/index.js"
