@@ -9,5 +9,5 @@ const userCredentails = {
 BeforeAll(function() {
     return publicPost(`${baseUrl}/auth/login`, userCredentails).then(response => {
         setWorldConstructor(getGlobalClass(response.data.data.token));
-    }).catch(error=>error);
+    }).catch(error => error);
 });
