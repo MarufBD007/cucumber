@@ -2,36 +2,46 @@
   {
     "keyword": "Feature",
     "name": "Accounts",
-    "line": 1,
+    "line": 2,
     "id": "accounts",
-    "tags": [],
+    "tags": [
+      {
+        "name": "@PositiveTesting",
+        "line": 1
+      }
+    ],
     "uri": "test/api/features/account.feature",
     "elements": [
       {
         "id": "accounts;i-want-to-see-the-account-list",
         "keyword": "Scenario",
-        "line": 2,
+        "line": 3,
         "name": "I want to see the account list",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@PositiveTesting",
+            "line": 1
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 3,
+            "line": 4,
             "name": "I call the api with Bearer token for fetching account list",
             "match": {
               "location": "test/api/steps/account.js:7"
             },
             "result": {
               "status": "passed",
-              "duration": 1082000000
+              "duration": 1019000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 4,
+            "line": 5,
             "name": "I can see the list of accounts",
             "match": {
               "location": "test/api/steps/account.js:15"
@@ -47,119 +57,47 @@
   },
   {
     "keyword": "Feature",
-    "name": "Login",
-    "line": 1,
-    "id": "login",
-    "tags": [],
-    "uri": "test/api/features/login.feature",
-    "elements": [
-      {
-        "id": "login;login-with-valid-credentials",
-        "keyword": "Scenario",
-        "line": 2,
-        "name": "Login with valid credentials",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "information",
-                      "data_type"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "email",
-                      "marufr@springrainit.com"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "password",
-                      "asdzxc"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Given ",
-            "line": 3,
-            "name": "user wants to login with following attributes",
-            "match": {
-              "location": "test/api/steps/login.js:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "I press Login",
-            "match": {
-              "location": "test/api/steps/login.js:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 714000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "I should get status 200 along with a valid token",
-            "match": {
-              "location": "test/api/steps/login.js:21"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "keyword": "Feature",
     "name": "User",
-    "line": 1,
+    "line": 2,
     "id": "user",
-    "tags": [],
+    "tags": [
+      {
+        "name": "@PositiveTesting",
+        "line": 1
+      }
+    ],
     "uri": "test/api/features/user.feature",
     "elements": [
       {
         "id": "user;a-user-wants-to-see-his-details",
         "keyword": "Scenario",
-        "line": 2,
+        "line": 3,
         "name": "A User wants to see his Details",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@PositiveTesting",
+            "line": 1
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 3,
+            "line": 4,
             "name": "I call the api with Bearer token",
             "match": {
               "location": "test/api/steps/user.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 722000000
+              "duration": 767000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 4,
+            "line": 5,
             "name": "I can see the details of the user with status success",
             "match": {
               "location": "test/api/steps/user.js:16"
