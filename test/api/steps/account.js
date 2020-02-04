@@ -12,7 +12,7 @@ When('I call the api with Bearer token for fetching account list', function(){
     }); 
 });
 
-Then('I can see the list of accounts', function(){
+Then('I should see the list of accounts', function(){
     assert(responseData.data.status === "success");
     assert(responseData.data.data.length > 0);
 });

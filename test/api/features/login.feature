@@ -1,3 +1,4 @@
+@PositiveTesting
 Feature: Login
     Scenario: Login with valid credentials
         Given user wants to login with following attributes

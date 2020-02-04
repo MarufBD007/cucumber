@@ -5,7 +5,7 @@ const { baseUrl } = require("../../../config");
 let request = {};
 let responseData = {};
 
-Given('user wants to login with following attributes',  async function(data){
+Given('user wants to login with following attributes', function(data){
     request.email = data.raw()[1][1];
     request.password = data.raw()[2][1];
 });
