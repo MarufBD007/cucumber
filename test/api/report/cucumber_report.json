@@ -35,7 +35,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 752000000
+              "duration": 1106000000
             }
           },
           {
@@ -57,9 +57,9 @@
   },
   {
     "keyword": "Feature",
-    "name": "Login",
+    "name": "User Login",
     "line": 2,
-    "id": "login",
+    "id": "user-login",
     "tags": [
       {
         "name": "@PositiveTesting",
@@ -69,7 +69,7 @@
     "uri": "test/api/features/login.feature",
     "elements": [
       {
-        "id": "login;login-with-valid-credentials",
+        "id": "user-login;login-with-valid-credentials",
         "keyword": "Scenario",
         "line": 3,
         "name": "Login with valid credentials",
@@ -108,26 +108,26 @@
             ],
             "keyword": "Given ",
             "line": 4,
-            "name": "user wants to login with following attributes",
+            "name": "I want to login with the following attributes",
             "match": {
               "location": "test/api/steps/login.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 8,
-            "name": "I press Login",
+            "name": "I press Login button",
             "match": {
               "location": "test/api/steps/login.js:13"
             },
             "result": {
               "status": "passed",
-              "duration": 707000000
+              "duration": 919000000
             }
           },
           {
@@ -183,7 +183,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 714000000
+              "duration": 808000000
             }
           },
           {
@@ -196,7 +196,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]

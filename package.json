@@ -12,7 +12,7 @@
     "report:api": "node test/api/index.js",
     "report:web": "node test/web/index.js"
   },
-  "author": "",
+  "author": "Md Maruf Rahman",
   "license": "ISC",
   "devDependencies": {
     "cucumber": "^6.0.5",
