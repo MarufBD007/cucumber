@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "pretest": "./node_modules/.bin/assertthat-bdd -i 10000 -f -a 337ddbe27956ca5bc0c1784d162623b967048311964e9c188341a9b5f69fc6ab -s 1c81a71c5e471c225006752e0219affd9cfbfd274969913ed62f31761b613ca3",
+    "test": "cucumber-js ./features -r ./test/api/steps -f json:reports/cucumber_report.json",
+    "posttest": "./node_modules/.bin/assertthat-bdd -i 10000 -r -a 337ddbe27956ca5bc0c1784d162623b967048311964e9c188341a9b5f69fc6ab -s 1c81a71c5e471c225006752e0219affd9cfbfd274969913ed62f31761b613ca3",
     "start": "npm run test:api; npm run test:web;",
     "test:api": "npm run cucumber:api; npm run report:api;",
     "test:web": "npm run cucumber:web; npm run report:web;",
@@ -19,6 +22,7 @@
     "cucumber-html-reporter": "^5.1.0"
   },
   "dependencies": {
+    "@assertthat/assertthat-bdd": "^1.2.1",
     "axios": "^0.19.2",
     "chromedriver": "^79.0.2",
     "dotenv": "^8.2.0",

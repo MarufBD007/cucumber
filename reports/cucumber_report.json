@@ -1,0 +1,106 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "User Login",
+    "line": 3,
+    "id": "user-login",
+    "tags": [
+      {
+        "name": "@PositiveTesting",
+        "line": 2
+      }
+    ],
+    "uri": "features/1-user-login.feature",
+    "elements": [
+      {
+        "id": "user-login;login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Login with valid credentials",
+        "tags": [
+          {
+            "name": "@PositiveTesting",
+            "line": 2
+          },
+          {
+            "name": "@AUTOMATED",
+            "line": 5
+          },
+          {
+            "name": "@test",
+            "line": 5
+          },
+          {
+            "name": "@CUC-1",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "information",
+                      "data_type"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "email",
+                      "marufr@springrainit.com"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "asdzxc"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I want to login with the following attributes",
+            "match": {
+              "location": "test/api/steps/login.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I press Login button",
+            "match": {
+              "location": "test/api/steps/login.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 917000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should get status 200 along with a valid token",
+            "match": {
+              "location": "test/api/steps/login.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
