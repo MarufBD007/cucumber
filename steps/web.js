@@ -19,6 +19,8 @@ Then('I should see dashboard page', async function (data) {
     const url = await driver.getCurrentUrl();
     assert(url === data.raw()[1][1]);
  });
-AfterAll(function() {
-    return driver.quit();
+AfterAll(async function() {
+    if(driver){
+        return await driver.quit();
+    }
 });
