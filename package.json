@@ -5,15 +5,8 @@
   "main": "index.js",
   "scripts": {
     "pretest": "./node_modules/.bin/assertthat-bdd -i 10000 -f -a 337ddbe27956ca5bc0c1784d162623b967048311964e9c188341a9b5f69fc6ab -s 1c81a71c5e471c225006752e0219affd9cfbfd274969913ed62f31761b613ca3",
-    "test": "cucumber-js ./features -r ./test/api/steps -f json:reports/cucumber_report.json",
-    "posttest": "./node_modules/.bin/assertthat-bdd -i 10000 -r -a 337ddbe27956ca5bc0c1784d162623b967048311964e9c188341a9b5f69fc6ab -s 1c81a71c5e471c225006752e0219affd9cfbfd274969913ed62f31761b613ca3",
-    "start": "npm run test:api; npm run test:web;",
-    "test:api": "npm run cucumber:api; npm run report:api;",
-    "test:web": "npm run cucumber:web; npm run report:web;",
-    "cucumber:api": "cucumber-js --tags @PositiveTesting ./test/api/features -r ./test/api/steps -f json:test/api/report/cucumber_report.json",
-    "cucumber:web": "cucumber-js ./test/web/features -r ./test/web/steps -f json:test/web/report/cucumber_report.json",
-    "report:api": "node test/api/index.js",
-    "report:web": "node test/web/index.js"
+    "test": "cucumber-js ./features -r ./steps -f json:reports/cucumber_report.json",
+    "posttest": "./node_modules/.bin/assertthat-bdd -i 10000 -r -a 337ddbe27956ca5bc0c1784d162623b967048311964e9c188341a9b5f69fc6ab -s 1c81a71c5e471c225006752e0219affd9cfbfd274969913ed62f31761b613ca3"
   },
   "author": "Md Maruf Rahman",
   "license": "ISC",

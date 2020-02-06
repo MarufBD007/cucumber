@@ -1,7 +1,7 @@
 const { Given, Then, When } = require('cucumber');
 const assert = require('assert');
-const { publicPost} = require("../../apiCaller");
-const { baseUrl } = require("../../../config");
+const { publicPost} = require("./apiCaller");
+const { baseUrl } = require("../config");
 let request = {};
 let responseData = {};
 

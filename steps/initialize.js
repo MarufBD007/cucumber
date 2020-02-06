@@ -1,6 +1,6 @@
 const { setWorldConstructor, BeforeAll, Before } = require('cucumber');
-const { publicPost} = require("../../apiCaller");
-const { baseUrl } = require("../../../config");
+const { publicPost} = require("./apiCaller");
+const { baseUrl } = require("../config");
 const getGlobalClass = require("./support/global");
 const userCredentails = {
     email: "marufr@springrainit.com",

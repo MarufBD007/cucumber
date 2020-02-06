@@ -27,7 +27,7 @@
             "line": 5
           },
           {
-            "name": "@test",
+            "name": "@UAT",
             "line": 5
           },
           {
@@ -66,11 +66,11 @@
             "line": 8,
             "name": "I want to login with the following attributes",
             "match": {
-              "location": "test/api/steps/login.js:8"
+              "location": "steps/login.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 2000000
             }
           },
           {
@@ -79,11 +79,11 @@
             "line": 12,
             "name": "I press Login button",
             "match": {
-              "location": "test/api/steps/login.js:13"
+              "location": "steps/login.js:13"
             },
             "result": {
               "status": "passed",
-              "duration": 917000000
+              "duration": 1143000000
             }
           },
           {
@@ -92,11 +92,123 @@
             "line": 13,
             "name": "I should get status 200 along with a valid token",
             "match": {
-              "location": "test/api/steps/login.js:21"
+              "location": "steps/login.js:21"
             },
             "result": {
               "status": "passed",
               "duration": 2000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "User Login Via Webportal",
+    "line": 2,
+    "id": "user-login-via-webportal",
+    "tags": [],
+    "uri": "features/2-user-login-via-webportal.feature",
+    "elements": [
+      {
+        "id": "user-login-via-webportal;login-user-with-valid-credentials-in-webportal",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Login user with valid credentials in webportal",
+        "tags": [
+          {
+            "name": "@AUTOMATED",
+            "line": 4
+          },
+          {
+            "name": "@UAT",
+            "line": 4
+          },
+          {
+            "name": "@CUC-1",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the webportal login page",
+            "match": {
+              "location": "steps/web.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7079000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "information",
+                      "data_type"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "email",
+                      "marufr@springrainit.com"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "asdzxc"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I fill in Email and Password with the following and then press Login",
+            "match": {
+              "location": "steps/web.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3160000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "information",
+                      "data_type"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "url",
+                      "https://member.dev.clubswan.com/dashboard"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see dashboard page",
+            "match": {
+              "location": "steps/web.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5050000000
             }
           }
         ]

@@ -1,7 +1,7 @@
 const { Then, When } = require('cucumber');
-const { baseUrl } = require("../../../config");
+const { baseUrl } = require("../config");
 const assert = require('assert');
-const { privateGet } = require("../../apiCaller");
+const { privateGet } = require("./apiCaller");
 let userDetails = {};
 
 
