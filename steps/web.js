@@ -1,12 +1,13 @@
 const { Given, Then, When, AfterAll, setDefaultTimeout } = require('cucumber');
 const { Builder, By, Key, until } = require('selenium-webdriver');
+const chrome = require('selenium-webdriver/chrome');
 const assert = require('assert');
 const sleep = require("sleep");
 let driver = null;
+const screen = { width: 1700, height: 900 };
 setDefaultTimeout(80 * 1000);
 Given('I am on the webportal login page', function () {
-    driver = new Builder().forBrowser('chrome').build();
-    driver.manage().window().setSize(1700, 900);
+    driver = new Builder().forBrowser('chrome').setChromeOptions(new chrome.Options().headless().windowSize(screen)).build();
     return driver.get('https://member.dev.clubswan.com/');
 });
 When('I fill in Email and Password with the following and then press Login', (dataTable) => {
