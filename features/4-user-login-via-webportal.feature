@@ -1,7 +1,7 @@
 # language: en
 Feature: User Login Via Webportal
 
-    @AUTOMATED @UAT @CUC-1 
+    @AUTOMATED @CUC-1 
     Scenario: Login user with valid credentials in webportal
         
         Given I am on the webportal login page

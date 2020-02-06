@@ -1,8 +1,8 @@
 # language: en
 @PositiveTesting    
-Feature: User Login
+Feature: User Login Via API
 
-    @AUTOMATED @UAT @CUC-1 
+    @AUTOMATED @CUC-1 
     Scenario: Login with valid credentials
         
         Given I want to login with the following attributes

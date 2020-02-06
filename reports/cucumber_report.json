@@ -1,22 +1,22 @@
 [
   {
     "keyword": "Feature",
-    "name": "User Login",
+    "name": "Accounts",
     "line": 3,
-    "id": "user-login",
+    "id": "accounts",
     "tags": [
       {
         "name": "@PositiveTesting",
         "line": 2
       }
     ],
-    "uri": "features/1-user-login.feature",
+    "uri": "features/1-accounts.feature",
     "elements": [
       {
-        "id": "user-login;login-with-valid-credentials",
+        "id": "accounts;i-want-to-see-the-account-list",
         "keyword": "Scenario",
         "line": 6,
-        "name": "Login with valid credentials",
+        "name": "I want to see the account list",
         "tags": [
           {
             "name": "@PositiveTesting",
@@ -27,7 +27,67 @@
             "line": 5
           },
           {
-            "name": "@UAT",
+            "name": "@CUC-3",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I call the api with Bearer token for fetching account list",
+            "match": {
+              "location": "steps/account.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1067000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should see the list of accounts",
+            "match": {
+              "location": "steps/account.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "User Login Via API",
+    "line": 3,
+    "id": "user-login-via-api",
+    "tags": [
+      {
+        "name": "@PositiveTesting",
+        "line": 2
+      }
+    ],
+    "uri": "features/2-user-login-via-api.feature",
+    "elements": [
+      {
+        "id": "user-login-via-api;login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Login with valid credentials",
+        "tags": [
+          {
+            "name": "@PositiveTesting",
+            "line": 2
+          },
+          {
+            "name": "@AUTOMATED",
             "line": 5
           },
           {
@@ -70,7 +130,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -83,7 +143,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1194000000
+              "duration": 711000000
             }
           },
           {
@@ -96,7 +156,71 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "User Details",
+    "line": 3,
+    "id": "user-details",
+    "tags": [
+      {
+        "name": "@PositiveTesting",
+        "line": 2
+      }
+    ],
+    "uri": "features/3-user-details.feature",
+    "elements": [
+      {
+        "id": "user-details;a-user-wants-to-see-his-details",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "A User wants to see his Details",
+        "tags": [
+          {
+            "name": "@PositiveTesting",
+            "line": 2
+          },
+          {
+            "name": "@AUTOMATED",
+            "line": 5
+          },
+          {
+            "name": "@CUC-2",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I call the api with Bearer token",
+            "match": {
+              "location": "steps/user.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 705000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I can see the details of the user with status success",
+            "match": {
+              "location": "steps/user.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
             }
           }
         ]
@@ -109,7 +233,7 @@
     "line": 2,
     "id": "user-login-via-webportal",
     "tags": [],
-    "uri": "features/2-user-login-via-webportal.feature",
+    "uri": "features/4-user-login-via-webportal.feature",
     "elements": [
       {
         "id": "user-login-via-webportal;login-user-with-valid-credentials-in-webportal",
@@ -119,10 +243,6 @@
         "tags": [
           {
             "name": "@AUTOMATED",
-            "line": 4
-          },
-          {
-            "name": "@UAT",
             "line": 4
           },
           {
@@ -142,7 +262,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5190000000
+              "duration": 5243000000
             }
           },
           {
@@ -178,7 +298,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2692000000
+              "duration": 2452000000
             }
           },
           {
@@ -208,7 +328,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5670000000
+              "duration": 5802000000
             }
           }
         ]
