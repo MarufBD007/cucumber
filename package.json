@@ -19,8 +19,6 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "selenium-webdriver": "^3.5.0",
-    "chromedriver": "^79.0.2",
-    "geckodriver": "^1.19.1",
     "sleep": "^6.1.0",
     "cucumber-html-reporter": "^5.1.0"
   }
