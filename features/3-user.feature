@@ -2,7 +2,7 @@
 @PositiveTesting    
 Feature: User
 
-    @AUTOMATED @CUC-4 
+    @AUTOMATED @CUC-1 
     Scenario: A User wants to see his Details
         
         When I call the api with Bearer token
