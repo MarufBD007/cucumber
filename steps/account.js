@@ -5,6 +5,7 @@ const { privateGet } = require("./apiCaller");
 let responseData = {};
 
 
+
 When('I call the api with Bearer token for fetching account list', function () {
     return privateGet(`${baseUrl}/accounts/list`, this.token).then(response => {
         responseData = response;
