@@ -1,114 +1,6 @@
 [
   {
     "keyword": "Feature",
-    "name": "User Login Via Webportal",
-    "line": 2,
-    "id": "user-login-via-webportal",
-    "tags": [],
-    "uri": "features/1-user-login-via-webportal.feature",
-    "elements": [
-      {
-        "id": "user-login-via-webportal;login-user-with-valid-credentials-in-webportal",
-        "keyword": "Scenario",
-        "line": 5,
-        "name": "Login user with valid credentials in webportal",
-        "tags": [
-          {
-            "name": "@AUTOMATED",
-            "line": 4
-          },
-          {
-            "name": "@CUC-4",
-            "line": 4
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "I am on the webportal login page",
-            "match": {
-              "location": "steps/web.js:9"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5020000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "information",
-                      "data_type"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "email",
-                      "marufr@springrainit.com"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "password",
-                      "asdzxc"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "When ",
-            "line": 8,
-            "name": "I fill in Email and Password with the following and then press Login",
-            "match": {
-              "location": "steps/web.js:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2408000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "information",
-                      "data_type"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "url",
-                      "https://member.dev.clubswan.com/dashboard"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
-            "line": 12,
-            "name": "I should see dashboard page",
-            "match": {
-              "location": "steps/web.js:18"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6336000000
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "keyword": "Feature",
     "name": "User",
     "line": 3,
     "id": "user",
@@ -118,7 +10,7 @@
         "line": 2
       }
     ],
-    "uri": "features/2-user.feature",
+    "uri": "features/1-user.feature",
     "elements": [
       {
         "id": "user;a-user-wants-to-see-his-details",
@@ -151,7 +43,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1147000000
+              "duration": 895000000
             }
           },
           {
@@ -177,7 +69,7 @@
     "line": 2,
     "id": "login",
     "tags": [],
-    "uri": "features/3-login.feature",
+    "uri": "features/2-login.feature",
     "elements": [
       {
         "id": "login;login-with-valid-credentials",
@@ -242,7 +134,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 871000000
+              "duration": 919000000
             }
           },
           {
@@ -255,7 +147,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]
