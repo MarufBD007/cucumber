@@ -1,5 +1,4 @@
 # language: en
-@PositiveTesting    
 Feature: Accounts
 
     @AUTOMATED @CUC-3 

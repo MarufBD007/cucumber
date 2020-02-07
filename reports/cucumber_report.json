@@ -2,33 +2,24 @@
   {
     "keyword": "Feature",
     "name": "Accounts",
-    "line": 3,
+    "line": 2,
     "id": "accounts",
-    "tags": [
-      {
-        "name": "@PositiveTesting",
-        "line": 2
-      }
-    ],
+    "tags": [],
     "uri": "features/1-accounts.feature",
     "elements": [
       {
         "id": "accounts;i-want-to-see-the-account-list",
         "keyword": "Scenario",
-        "line": 6,
+        "line": 5,
         "name": "I want to see the account list",
         "tags": [
           {
-            "name": "@PositiveTesting",
-            "line": 2
-          },
-          {
             "name": "@AUTOMATED",
-            "line": 5
+            "line": 4
           },
           {
             "name": "@CUC-3",
-            "line": 5
+            "line": 4
           }
         ],
         "type": "scenario",
@@ -36,27 +27,27 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 8,
+            "line": 7,
             "name": "I call the api with Bearer token for fetching account list",
             "match": {
               "location": "steps/account.js:7"
             },
             "result": {
               "status": "passed",
-              "duration": 1067000000
+              "duration": 1303000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 9,
+            "line": 8,
             "name": "I should see the list of accounts",
             "match": {
               "location": "steps/account.js:15"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]
@@ -66,33 +57,24 @@
   {
     "keyword": "Feature",
     "name": "User Login Via API",
-    "line": 3,
+    "line": 2,
     "id": "user-login-via-api",
-    "tags": [
-      {
-        "name": "@PositiveTesting",
-        "line": 2
-      }
-    ],
+    "tags": [],
     "uri": "features/2-user-login-via-api.feature",
     "elements": [
       {
         "id": "user-login-via-api;login-with-valid-credentials",
         "keyword": "Scenario",
-        "line": 6,
+        "line": 5,
         "name": "Login with valid credentials",
         "tags": [
           {
-            "name": "@PositiveTesting",
-            "line": 2
-          },
-          {
             "name": "@AUTOMATED",
-            "line": 5
+            "line": 4
           },
           {
             "name": "@CUC-1",
-            "line": 5
+            "line": 4
           }
         ],
         "type": "scenario",
@@ -123,7 +105,7 @@
               }
             ],
             "keyword": "Given ",
-            "line": 8,
+            "line": 7,
             "name": "I want to login with the following attributes",
             "match": {
               "location": "steps/login.js:8"
@@ -136,27 +118,27 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 12,
+            "line": 11,
             "name": "I press Login button",
             "match": {
               "location": "steps/login.js:13"
             },
             "result": {
               "status": "passed",
-              "duration": 711000000
+              "duration": 943000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 13,
+            "line": 12,
             "name": "I should get status 200 along with a valid token",
             "match": {
               "location": "steps/login.js:21"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 2000000
             }
           }
         ]
@@ -166,33 +148,24 @@
   {
     "keyword": "Feature",
     "name": "User Details",
-    "line": 3,
+    "line": 2,
     "id": "user-details",
-    "tags": [
-      {
-        "name": "@PositiveTesting",
-        "line": 2
-      }
-    ],
+    "tags": [],
     "uri": "features/3-user-details.feature",
     "elements": [
       {
         "id": "user-details;a-user-wants-to-see-his-details",
         "keyword": "Scenario",
-        "line": 6,
+        "line": 7,
         "name": "A User wants to see his Details",
         "tags": [
           {
-            "name": "@PositiveTesting",
-            "line": 2
-          },
-          {
             "name": "@AUTOMATED",
-            "line": 5
+            "line": 6
           },
           {
             "name": "@CUC-2",
-            "line": 5
+            "line": 6
           }
         ],
         "type": "scenario",
@@ -207,7 +180,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 705000000
+              "duration": 911000000
             }
           },
           {
@@ -262,7 +235,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5243000000
+              "duration": 5146000000
             }
           },
           {
@@ -298,7 +271,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2452000000
+              "duration": 2511000000
             }
           },
           {
@@ -328,7 +301,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5802000000
+              "duration": 5619000000
             }
           }
         ]

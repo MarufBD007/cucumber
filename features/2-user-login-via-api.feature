@@ -1,5 +1,4 @@
 # language: en
-@PositiveTesting    
 Feature: User Login Via API
 
     @AUTOMATED @CUC-1 
