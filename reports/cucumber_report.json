@@ -1,24 +1,24 @@
 [
   {
     "keyword": "Feature",
-    "name": "Accounts",
+    "name": "User Login Via Webportal",
     "line": 2,
-    "id": "accounts",
+    "id": "user-login-via-webportal",
     "tags": [],
-    "uri": "features/1-accounts.feature",
+    "uri": "features/1-user-login-via-webportal.feature",
     "elements": [
       {
-        "id": "accounts;i-want-to-see-the-account-list",
+        "id": "user-login-via-webportal;login-user-with-valid-credentials-in-webportal",
         "keyword": "Scenario",
         "line": 5,
-        "name": "I want to see the account list",
+        "name": "Login user with valid credentials in webportal",
         "tags": [
           {
             "name": "@AUTOMATED",
             "line": 4
           },
           {
-            "name": "@CUC-3",
+            "name": "@CUC-4",
             "line": 4
           }
         ],
@@ -26,28 +26,81 @@
         "steps": [
           {
             "arguments": [],
-            "keyword": "When ",
+            "keyword": "Given ",
             "line": 7,
-            "name": "I call the api with Bearer token for fetching account list",
+            "name": "I am on the webportal login page",
             "match": {
-              "location": "steps/account.js:7"
+              "location": "steps/web.js:9"
             },
             "result": {
               "status": "passed",
-              "duration": 1303000000
+              "duration": 4570000000
             }
           },
           {
-            "arguments": [],
-            "keyword": "Then ",
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "information",
+                      "data_type"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "email",
+                      "marufr@springrainit.com"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "asdzxc"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
             "line": 8,
-            "name": "I should see the list of accounts",
+            "name": "I fill in Email and Password with the following and then press Login",
             "match": {
-              "location": "steps/account.js:15"
+              "location": "steps/web.js:13"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 2350000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "information",
+                      "data_type"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "url",
+                      "https://member.dev.clubswan.com/dashboard"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see dashboard page",
+            "match": {
+              "location": "steps/web.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5560000000
             }
           }
         ]
@@ -56,14 +109,78 @@
   },
   {
     "keyword": "Feature",
-    "name": "User Login Via API",
-    "line": 2,
-    "id": "user-login-via-api",
-    "tags": [],
-    "uri": "features/2-user-login-via-api.feature",
+    "name": "User",
+    "line": 3,
+    "id": "user",
+    "tags": [
+      {
+        "name": "@PositiveTesting",
+        "line": 2
+      }
+    ],
+    "uri": "features/2-user.feature",
     "elements": [
       {
-        "id": "user-login-via-api;login-with-valid-credentials",
+        "id": "user;a-user-wants-to-see-his-details",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "A User wants to see his Details",
+        "tags": [
+          {
+            "name": "@PositiveTesting",
+            "line": 2
+          },
+          {
+            "name": "@AUTOMATED",
+            "line": 5
+          },
+          {
+            "name": "@CUC-4",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I call the api with Bearer token",
+            "match": {
+              "location": "steps/user.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1169000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I can see the details of the user with status success",
+            "match": {
+              "location": "steps/user.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "Login",
+    "line": 2,
+    "id": "login",
+    "tags": [],
+    "uri": "features/3-login.feature",
+    "elements": [
+      {
+        "id": "login;login-with-valid-credentials",
         "keyword": "Scenario",
         "line": 5,
         "name": "Login with valid credentials",
@@ -106,7 +223,7 @@
             ],
             "keyword": "Given ",
             "line": 7,
-            "name": "I want to login with the following attributes",
+            "name": "user wants to login with following attributes",
             "match": {
               "location": "steps/login.js:8"
             },
@@ -119,13 +236,13 @@
             "arguments": [],
             "keyword": "When ",
             "line": 11,
-            "name": "I press Login button",
+            "name": "I press Login",
             "match": {
               "location": "steps/login.js:13"
             },
             "result": {
               "status": "passed",
-              "duration": 943000000
+              "duration": 833000000
             }
           },
           {
@@ -139,169 +256,6 @@
             "result": {
               "status": "passed",
               "duration": 2000000
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "keyword": "Feature",
-    "name": "User Details",
-    "line": 2,
-    "id": "user-details",
-    "tags": [],
-    "uri": "features/3-user-details.feature",
-    "elements": [
-      {
-        "id": "user-details;a-user-wants-to-see-his-details",
-        "keyword": "Scenario",
-        "line": 7,
-        "name": "A User wants to see his Details",
-        "tags": [
-          {
-            "name": "@AUTOMATED",
-            "line": 6
-          },
-          {
-            "name": "@CUC-2",
-            "line": 6
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "I call the api with Bearer token",
-            "match": {
-              "location": "steps/user.js:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 911000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "I can see the details of the user with status success",
-            "match": {
-              "location": "steps/user.js:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "keyword": "Feature",
-    "name": "User Login Via Webportal",
-    "line": 2,
-    "id": "user-login-via-webportal",
-    "tags": [],
-    "uri": "features/4-user-login-via-webportal.feature",
-    "elements": [
-      {
-        "id": "user-login-via-webportal;login-user-with-valid-credentials-in-webportal",
-        "keyword": "Scenario",
-        "line": 5,
-        "name": "Login user with valid credentials in webportal",
-        "tags": [
-          {
-            "name": "@AUTOMATED",
-            "line": 4
-          },
-          {
-            "name": "@CUC-1",
-            "line": 4
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "I am on the webportal login page",
-            "match": {
-              "location": "steps/web.js:9"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5146000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "information",
-                      "data_type"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "email",
-                      "marufr@springrainit.com"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "password",
-                      "asdzxc"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "When ",
-            "line": 8,
-            "name": "I fill in Email and Password with the following and then press Login",
-            "match": {
-              "location": "steps/web.js:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2511000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "information",
-                      "data_type"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "url",
-                      "https://member.dev.clubswan.com/dashboard"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
-            "line": 12,
-            "name": "I should see dashboard page",
-            "match": {
-              "location": "steps/web.js:18"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5619000000
             }
           }
         ]

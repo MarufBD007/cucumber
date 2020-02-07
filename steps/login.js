@@ -5,12 +5,12 @@ const { baseUrl } = require("../config");
 let request = {};
 let responseData = {};
 
-Given('I want to login with the following attributes', function(data){
+Given('user wants to login with following attributes', function(data){
     request.email = data.raw()[1][1];
     request.password = data.raw()[2][1];
 });
 
-When('I press Login button', () => {
+When('I press Login', () => {
     return publicPost(`${baseUrl}/auth/login`,request).then(response => {
         responseData = response;
     }).catch(error => {
