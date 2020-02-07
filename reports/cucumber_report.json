@@ -43,7 +43,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1396000000
+              "duration": 955000000
             }
           },
           {
@@ -56,7 +56,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]
@@ -130,7 +130,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -143,7 +143,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 841000000
+              "duration": 708000000
             }
           },
           {
@@ -156,7 +156,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ]
@@ -207,7 +207,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 838000000
+              "duration": 862000000
             }
           },
           {
@@ -220,124 +220,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "keyword": "Feature",
-    "name": "User Login Via Web",
-    "line": 3,
-    "id": "user-login-via-web",
-    "tags": [
-      {
-        "name": "@PositiveTesting",
-        "line": 2
-      }
-    ],
-    "uri": "features/4-user-login-via-web.feature",
-    "elements": [
-      {
-        "id": "user-login-via-web;login-with-valid-credentials-for-web",
-        "keyword": "Scenario",
-        "line": 6,
-        "name": "Login with valid credentials for web",
-        "tags": [
-          {
-            "name": "@PositiveTesting",
-            "line": 2
-          },
-          {
-            "name": "@AUTOMATED",
-            "line": 5
-          },
-          {
-            "name": "@CUC-1",
-            "line": 5
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "I am on the webportal login page",
-            "match": {
-              "location": "steps/web.js:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4581000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "information",
-                      "data_type"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "email",
-                      "marufr@springrainit.com"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "password",
-                      "asdzxc"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "When ",
-            "line": 9,
-            "name": "I fill in Email and Password with the following and then press Login",
-            "match": {
-              "location": "steps/web.js:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2429000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "information",
-                      "data_type"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "url",
-                      "https://member.dev.clubswan.com/dashboard"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
-            "line": 13,
-            "name": "I should see dashboard page",
-            "match": {
-              "location": "steps/web.js:20"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5717000000
+              "duration": 0
             }
           }
         ]
