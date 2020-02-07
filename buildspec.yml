@@ -5,6 +5,10 @@ env:
 phases:
   install:
     commands:
+      - wget https://chromedriver.storage.googleapis.com/2.37/chromedriver_linux64.zip
+      - unzip chromedriver_linux64.zip
+      - mv chromedriver /usr/bin/chromedriver
+      - chromedriver --version
       - npm i -g cucumber
       - npm i -g selenium-webdriver
   pre_build:

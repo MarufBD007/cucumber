@@ -39,11 +39,11 @@
             "line": 8,
             "name": "I am on the webportal login page",
             "match": {
-              "location": "steps/web.js:11"
+              "location": "steps/web.js:9"
             },
             "result": {
               "status": "passed",
-              "duration": 4870000000
+              "duration": 9998000000
             }
           },
           {
@@ -75,11 +75,11 @@
             "line": 9,
             "name": "I fill in Email and Password with the following and then press Login",
             "match": {
-              "location": "steps/web.js:15"
+              "location": "steps/web.js:13"
             },
             "result": {
               "status": "passed",
-              "duration": 2440000000
+              "duration": 2555000000
             }
           },
           {
@@ -105,11 +105,11 @@
             "line": 13,
             "name": "I should see dashboard page",
             "match": {
-              "location": "steps/web.js:20"
+              "location": "steps/web.js:18"
             },
             "result": {
               "status": "passed",
-              "duration": 5705000000
+              "duration": 5023000000
             }
           }
         ]
@@ -160,7 +160,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1124000000
+              "duration": 1206000000
             }
           },
           {
@@ -260,7 +260,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 768000000
+              "duration": 808000000
             }
           },
           {
@@ -324,7 +324,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 913000000
+              "duration": 783000000
             }
           },
           {
