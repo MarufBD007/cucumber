@@ -16,10 +16,11 @@
   "dependencies": {
     "@assertthat/assertthat-bdd": "^1.2.1",
     "axios": "^0.19.2",
+    "chromedriver": "^79.0",
+    "cucumber-html-reporter": "^5.1.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "selenium-webdriver": "^3.5.0",
-    "sleep": "^6.1.0",
-    "cucumber-html-reporter": "^5.1.0"
+    "sleep": "^6.1.0"
   }
 }
