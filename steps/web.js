@@ -1,11 +1,11 @@
-const chromedriver = require('chromedriver');
+// const chromedriver = require('chromedriver');
 const { Given, Then, When, AfterAll, setDefaultTimeout } = require('cucumber');
 const { Builder, By, Key, until } = require('selenium-webdriver');
 const chrome = require('selenium-webdriver/chrome');
 const assert = require('assert');
 const sleep = require("sleep");
 let driver = null;
-chrome.setDefaultService(new chrome.ServiceBuilder(chromedriver.path).build());
+// chrome.setDefaultService(new chrome.ServiceBuilder(chromedriver.path).build());
 const screen = { width: 1700, height: 900 };
 setDefaultTimeout(80 * 1000);
 Given('I am on the webportal login page', function () {
