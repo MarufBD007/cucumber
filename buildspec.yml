@@ -9,6 +9,3 @@ phases:
   build:
     commands:
       - npm run test
-cache:
-  paths:
-    - './node_modules/**/*'
