@@ -5,4 +5,4 @@ phases:
     commands:
       # Install dependencies needed for running tests
       - npm install
-      - npm run test
+      - npm test
