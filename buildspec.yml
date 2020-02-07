@@ -1,10 +1,13 @@
 version: 0.2
-
+env:
+  variables:
+    BROWSER: "chrome"
 phases:
   install:
     commands:
       - npm i -g cucumber
       - npm i -g selenium-webdriver
+      - npm i -g chromedriver
   pre_build:
     commands:
       - npm install
