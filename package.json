@@ -4,7 +4,6 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "npm run test",
     "pretest": "./node_modules/.bin/assertthat-bdd -i 10000 -f -a 337ddbe27956ca5bc0c1784d162623b967048311964e9c188341a9b5f69fc6ab -s 1c81a71c5e471c225006752e0219affd9cfbfd274969913ed62f31761b613ca3",
     "test": "cucumber-js ./features -r ./steps -f json:reports/cucumber_report.json",
     "posttest": "./node_modules/.bin/assertthat-bdd -i 10000 -r -a 337ddbe27956ca5bc0c1784d162623b967048311964e9c188341a9b5f69fc6ab -s 1c81a71c5e471c225006752e0219affd9cfbfd274969913ed62f31761b613ca3"
