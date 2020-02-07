@@ -5,8 +5,6 @@ phases:
     commands:
       - npm i -g cucumber
       - npm i -g selenium-webdriver
-      - npm i -g chromedriver
-      - npm i -g geckodriver
   pre_build:
     commands:
       - npm install
