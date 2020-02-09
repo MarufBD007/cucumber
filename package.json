@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "pretest": "./node_modules/.bin/assertthat-bdd -i 10000 -f -a 337ddbe27956ca5bc0c1784d162623b967048311964e9c188341a9b5f69fc6ab -s 57dc65e8b93b5e4b185e8d6bc6bc75a01e0de344ebdaae8a0a8ddf7dce6d6882",
-    "test": "cucumber-js ./features -r ./steps -f json:reports/cucumber_report.json",
+    "test": "cucumber-js ./features -r ./steps -f json:reports/cucumber_report.json || :",
     "posttest": "./node_modules/.bin/assertthat-bdd -i 10000 -r -a 337ddbe27956ca5bc0c1784d162623b967048311964e9c188341a9b5f69fc6ab -s 57dc65e8b93b5e4b185e8d6bc6bc75a01e0de344ebdaae8a0a8ddf7dce6d6882"
   },
   "author": "Md Maruf Rahman",

@@ -8,11 +8,11 @@ let userDetails = {};
 When('I call the api with Bearer token', function () {
     return privateGet(`${baseUrl}/user`, this.token).then(response => {
         userDetails = response;
-    }).catch(error=>{
+    }).catch(error => {
         userDetails = error.response;
-    }); 
+    });
 });
 
-Then('I can see the details of the user with status success', function(){
+Then('I can see the details of the user with status success', function () {
     assert(userDetails.data.status === "success");
 });

@@ -43,7 +43,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9998000000
+              "duration": 7902000000
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2555000000
+              "duration": 2404000000
             }
           },
           {
@@ -109,7 +109,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5023000000
+              "duration": 6045000000
             }
           }
         ]
@@ -156,11 +156,11 @@
             "line": 8,
             "name": "I call the api with Bearer token for fetching account list",
             "match": {
-              "location": "steps/account.js:8"
+              "location": "steps/account.js:9"
             },
             "result": {
               "status": "passed",
-              "duration": 1206000000
+              "duration": 1207000000
             }
           },
           {
@@ -169,7 +169,7 @@
             "line": 9,
             "name": "I should see the list of accounts",
             "match": {
-              "location": "steps/account.js:16"
+              "location": "steps/account.js:17"
             },
             "result": {
               "status": "passed",
@@ -260,7 +260,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 808000000
+              "duration": 797000000
             }
           },
           {
@@ -273,7 +273,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 2000000
             }
           }
         ]
@@ -324,7 +324,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 783000000
+              "duration": 878000000
             }
           },
           {
@@ -337,7 +337,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]
