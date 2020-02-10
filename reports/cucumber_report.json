@@ -43,7 +43,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7902000000
+              "duration": 5075000000
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2404000000
+              "duration": 2418000000
             }
           },
           {
@@ -109,7 +109,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6045000000
+              "duration": 5482000000
             }
           }
         ]
@@ -160,7 +160,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1207000000
+              "duration": 1230000000
             }
           },
           {
@@ -173,7 +173,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]
@@ -208,7 +208,7 @@
             "line": 5
           },
           {
-            "name": "@CUC-1",
+            "name": "@TEST-1",
             "line": 5
           }
         ],
@@ -260,7 +260,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 797000000
+              "duration": 881000000
             }
           },
           {
@@ -282,19 +282,19 @@
   },
   {
     "keyword": "Feature",
-    "name": "User",
+    "name": "User Details",
     "line": 3,
-    "id": "user",
+    "id": "user-details",
     "tags": [
       {
         "name": "@PositiveTesting",
         "line": 2
       }
     ],
-    "uri": "features/4-user.feature",
+    "uri": "features/4-user-details.feature",
     "elements": [
       {
-        "id": "user;a-user-wants-to-see-his-details",
+        "id": "user-details;a-user-wants-to-see-his-details",
         "keyword": "Scenario",
         "line": 6,
         "name": "A User wants to see his Details",
@@ -308,7 +308,7 @@
             "line": 5
           },
           {
-            "name": "@CUC-1",
+            "name": "@TEST-2",
             "line": 5
           }
         ],
@@ -324,7 +324,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 878000000
+              "duration": 796000000
             }
           },
           {
@@ -337,7 +337,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ]

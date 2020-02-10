@@ -1,8 +1,8 @@
 # language: en
 @PositiveTesting    
-Feature: User
+Feature: User Details
 
-    @AUTOMATED @CUC-1 
+    @AUTOMATED @TEST-2 
     Scenario: A User wants to see his Details
         
         When I call the api with Bearer token

@@ -2,7 +2,7 @@
 @PositiveTesting    
 Feature: User Login
 
-    @AUTOMATED @CUC-1 
+    @AUTOMATED @TEST-1 
     Scenario: Login with valid credentials
         
         Given I want to login with the following attributes
