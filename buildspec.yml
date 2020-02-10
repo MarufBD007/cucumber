@@ -14,11 +14,11 @@ phases:
   pre_build:
     commands:
       - npm install
-      - pip install --upgrade awscli
   build:
     commands:
       - npm run test
-
-
+cache:
+  paths:
+    - 'node_modules/**/*'
 artifacts:
   files: '**/*'
