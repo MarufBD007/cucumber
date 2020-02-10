@@ -43,7 +43,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4875000000
+              "duration": 5530000000
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2413000000
+              "duration": 2548000000
             }
           },
           {
@@ -109,7 +109,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5053000000
+              "duration": 5052000000
             }
           }
         ]
@@ -160,7 +160,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 817000000
+              "duration": 1056000000
             }
           },
           {
@@ -172,9 +172,8 @@
               "location": "steps/account.js:17"
             },
             "result": {
-              "status": "failed",
-              "duration": 12000000,
-              "error_message": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(responseData.data.status === \"success\")\n\n    + expected - actual\n\n    -false\n    +true\n\n    at World.<anonymous> (/home/maruf/Desktop/cucumber/steps/account.js:18:5)"
+              "status": "passed",
+              "duration": 0
             }
           }
         ]
@@ -225,7 +224,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1118000000
+              "duration": 869000000
             }
           },
           {
@@ -237,9 +236,8 @@
               "location": "steps/user.js:16"
             },
             "result": {
-              "status": "failed",
-              "duration": 2000000,
-              "error_message": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(userDetails.data.status === \"success\")\n\n    + expected - actual\n\n    -false\n    +true\n\n    at World.<anonymous> (/home/maruf/Desktop/cucumber/steps/user.js:17:5)"
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ]
@@ -313,7 +311,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -326,7 +324,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1260000000
+              "duration": 946000000
             }
           },
           {
