@@ -1,6 +1,6 @@
 # language: en
 @PositiveTesting    
-Feature: User Login
+Feature: User Login Via API
 
     @AUTOMATED @TEST-1 
     Scenario: Login with valid credentials

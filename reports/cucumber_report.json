@@ -27,7 +27,7 @@
             "line": 5
           },
           {
-            "name": "@CUC-1",
+            "name": "@TEST-1",
             "line": 5
           }
         ],
@@ -43,7 +43,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5075000000
+              "duration": 4875000000
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2418000000
+              "duration": 2413000000
             }
           },
           {
@@ -109,7 +109,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5482000000
+              "duration": 5053000000
             }
           }
         ]
@@ -160,7 +160,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1230000000
+              "duration": 817000000
             }
           },
           {
@@ -172,8 +172,9 @@
               "location": "steps/account.js:17"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "failed",
+              "duration": 12000000,
+              "error_message": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(responseData.data.status === \"success\")\n\n    + expected - actual\n\n    -false\n    +true\n\n    at World.<anonymous> (/home/maruf/Desktop/cucumber/steps/account.js:18:5)"
             }
           }
         ]
@@ -182,19 +183,84 @@
   },
   {
     "keyword": "Feature",
-    "name": "User Login",
+    "name": "User Details",
     "line": 3,
-    "id": "user-login",
+    "id": "user-details",
     "tags": [
       {
         "name": "@PositiveTesting",
         "line": 2
       }
     ],
-    "uri": "features/3-user-login.feature",
+    "uri": "features/3-user-details.feature",
     "elements": [
       {
-        "id": "user-login;login-with-valid-credentials",
+        "id": "user-details;a-user-wants-to-see-his-details",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "A User wants to see his Details",
+        "tags": [
+          {
+            "name": "@PositiveTesting",
+            "line": 2
+          },
+          {
+            "name": "@AUTOMATED",
+            "line": 5
+          },
+          {
+            "name": "@TEST-2",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I call the api with Bearer token",
+            "match": {
+              "location": "steps/user.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1118000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I can see the details of the user with status success",
+            "match": {
+              "location": "steps/user.js:16"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2000000,
+              "error_message": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(userDetails.data.status === \"success\")\n\n    + expected - actual\n\n    -false\n    +true\n\n    at World.<anonymous> (/home/maruf/Desktop/cucumber/steps/user.js:17:5)"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "User Login Via API",
+    "line": 3,
+    "id": "user-login-via-api",
+    "tags": [
+      {
+        "name": "@PositiveTesting",
+        "line": 2
+      }
+    ],
+    "uri": "features/4-user-login-via-api.feature",
+    "elements": [
+      {
+        "id": "user-login-via-api;login-with-valid-credentials",
         "keyword": "Scenario",
         "line": 6,
         "name": "Login with valid credentials",
@@ -247,7 +313,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -260,7 +326,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 881000000
+              "duration": 1260000000
             }
           },
           {
@@ -273,71 +339,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "keyword": "Feature",
-    "name": "User Details",
-    "line": 3,
-    "id": "user-details",
-    "tags": [
-      {
-        "name": "@PositiveTesting",
-        "line": 2
-      }
-    ],
-    "uri": "features/4-user-details.feature",
-    "elements": [
-      {
-        "id": "user-details;a-user-wants-to-see-his-details",
-        "keyword": "Scenario",
-        "line": 6,
-        "name": "A User wants to see his Details",
-        "tags": [
-          {
-            "name": "@PositiveTesting",
-            "line": 2
-          },
-          {
-            "name": "@AUTOMATED",
-            "line": 5
-          },
-          {
-            "name": "@TEST-2",
-            "line": 5
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "I call the api with Bearer token",
-            "match": {
-              "location": "steps/user.js:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 796000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "I can see the details of the user with status success",
-            "match": {
-              "location": "steps/user.js:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]

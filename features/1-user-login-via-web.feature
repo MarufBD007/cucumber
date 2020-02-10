@@ -2,7 +2,7 @@
 @PositiveTesting    
 Feature: User Login Via Web
 
-    @AUTOMATED @CUC-1 
+    @AUTOMATED @TEST-1 
     Scenario: Login with valid credentials
         
         Given I am on the webportal login page
